@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&family=Raleway:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/** ------------- section to style my nav bar ------------- **/
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #be3144;
+    box-shadow: 0 2px 0 rgba(0 0 0 / 40%);
+    z-index: 10;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #273c5a;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+/** --------- section for styling the welcome section of my page ------------ **/
+
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);  
+}
+
+h1 {
+    font-size: 5.0rem;
+}
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.welcome-section > p {
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #be3144;
+}
+
+/** ------------ section for styling my projects ----------- **/
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #273c5a;
+}
+
+.projects-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.1rem solid white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    padding: 1.2rem 0.5rem;
+}
+
+
+.code {
+    color: #be3144;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+.project-tile {
+    background-color: #303841;
+    border-radius: 1%;
+}
+
+/** section for styling my contact buttons **/
+
+.contact-section-header > h2 {
+    font-size: 4rem;
+}
+
+.contact-section-header > p {
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80vh;
+    padding: 0 2rem;
+    background: #303841;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+
+.contact-details {
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 750px) {
+    .contact-section-header > h2 {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .welcome-section > p {
+        font-size: 1.5rem;
+    }
+
+    .nav-list a {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 80%;
+    }
+}

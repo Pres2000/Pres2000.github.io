@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Lexend Mega", sans-serif;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    display: inline-flex;
+    justify-content: space-around;
+    margin: 0 10%;
+    font-size: 1.5rem;
+}
+
+h3 a {
+    color: black;
+    font-weight: 200;
+}
+
+
+/* styling for mission statement section */
+
+.mission {
+    display: flex;
+    height: 350px;
+    width: 100%;
+    opacity: 0.9;
+    background-image: url('images/skyscrapers.jpg');
+    background-repeat: repeat;
+    margin-top: 35px;
+}
+
+.mission-content {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+}
+
+/* styling for the portfolio section */
+
+.companies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company img {
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.company span {
+    padding: 5px;
+    min-width: 240px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* styling section for OUR TEAM */
+
+.team-container {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('images/blurred-road.jpg');
+    opacity: 0.9;
+}
+
+.team-member img {
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-member {
+    padding: 10px;
+    color: white;
+    flex-basis: 280px;
+}
+
+.copyright {
+    margin-top: 100px;
+}
